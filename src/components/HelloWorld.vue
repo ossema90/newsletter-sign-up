@@ -1,6 +1,6 @@
 <template>
-  <v-container class=" main-container ">
-    <v-sheet class="d-flex child-container justify-center align-center pa-8 mt-16" width="900">
+  <div class=" main-container ">
+    <div class="d-flex child-container pa-8 " width="900">
       <div class=" d-flex flex-column ma-8">
         <div v-if="windowWidth <= 1440" class="ma-auto" style="left: 0; right: 0;">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="375" height="284"
@@ -304,8 +304,8 @@
           </g>
         </svg>
       </div>
-    </v-sheet>
-  </v-container>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -326,6 +326,7 @@ p {
 
 .child-container {
   border-radius: 2rem;
+  background-color: white;
 }
 
 .main-sheet {
@@ -337,11 +338,5 @@ input {
   border-radius: 0.5rem;
   height: 4rem;
   padding: 1rem;
-}
-
-.main-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 </style>

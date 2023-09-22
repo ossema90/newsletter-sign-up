@@ -1,6 +1,6 @@
 <template>
-  <v-app class="main-container ">
-    <v-main>
+  <v-app class="main-container   ">
+    <v-main class="center">
       <HelloWorld />
     </v-main>
   </v-app>
@@ -26,5 +26,13 @@ export default {
 .main-container {
   background-color: #3b3e59;
 
+
+
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>
