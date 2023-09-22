@@ -1,7 +1,7 @@
 <template>
   <v-app class="main-container ">
-    <v-main style="top:0; bottom:0;">
-      <HelloWorld class="d-flex justify-center  mt-16 " />
+    <v-main>
+      <HelloWorld />
     </v-main>
   </v-app>
 </template>

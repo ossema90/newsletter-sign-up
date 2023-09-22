@@ -1,6 +1,6 @@
 <template>
-  <v-container class=" align-center ">
-    <v-sheet class="d-flex main-container justify-center align-center pa-8 mt-16" width="900">
+  <v-container class=" main-container ">
+    <v-sheet class="d-flex child-container justify-center align-center pa-8 mt-16" width="900">
       <div class=" d-flex flex-column ma-8">
         <div v-if="windowWidth <= 1440" class="ma-auto" style="left: 0; right: 0;">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="375" height="284"
@@ -324,7 +324,7 @@ p {
   font-size: 16px;
 }
 
-.main-container {
+.child-container {
   border-radius: 2rem;
 }
 
@@ -337,5 +337,11 @@ input {
   border-radius: 0.5rem;
   height: 4rem;
   padding: 1rem;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>
